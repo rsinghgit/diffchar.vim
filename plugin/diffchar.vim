@@ -71,9 +71,9 @@ for [key, plg, cmd] in [
                                   \':<C-U>call diffchar#JumpDiffChar(0, 1)'],
   \[']e', '<Plug>JumpDiffCharNextEnd',
                                   \':<C-U>call diffchar#JumpDiffChar(1, 1)'],
-  \['<Leader>g', '<Plug>GetDiffCharPair',
+  \['<Leader>dg', '<Plug>GetDiffCharPair',
                                   \':<C-U>call diffchar#CopyDiffCharPair(0)'],
-  \['<Leader>p', '<Plug>PutDiffCharPair',
+  \['<Leader>dp', '<Plug>PutDiffCharPair',
                                   \':<C-U>call diffchar#CopyDiffCharPair(1)']]
   if !hasmapto(plg, 'n') && empty(maparg(key, 'n'))
     if get(g:, 'DiffCharDoMapping', 1)
